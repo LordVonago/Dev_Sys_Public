@@ -1,0 +1,58 @@
+{
+  "name": "sys-dev",
+  "version": "1.0.0",
+  "description": "Aplicativo Sys-Dev com Electron",
+  "author": "Seu Nome",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "edev": "electron .",
+    "build": "vite build",
+    "dist": "electron-builder",
+    "mount": "rimraf build && rimraf dist && rimraf release && npm run build && npm run dist",
+    "init": "npm install && npm install --save-dev electron-rebuild && npx electron-rebuild"
+  },
+  "build": {
+    "appId": "com.sysdev.app",
+    "productName": "DevSystem",
+    "files": [
+      "dist/**",
+      "main.js",
+      "preload.js",
+      "index.html",
+      "package.json",
+      "db.js"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "console": true
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "glob": "^11.0.3",
+    "globals": "^16.0.0",
+    "http-proxy-agent": "^7.0.2",
+    "vite": "^6.3.5"
+  }
+}

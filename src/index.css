@@ -1,0 +1,23 @@
+/* html::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+} */
+
+* {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  background-color: #c4c4c4;
+  min-width: fit-content;
+}
+
+form * {
+  all: unset;
+}

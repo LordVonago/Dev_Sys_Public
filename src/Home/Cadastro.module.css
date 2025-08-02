@@ -1,0 +1,75 @@
+.maincontainer {
+  background-color: #233861;
+  min-width: 315px;
+  max-width: 315px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+  & .título {
+    color: aliceblue;
+    font-size: 25px;
+  }
+}
+
+.formcontainer form {
+  padding: 5px 5px 0 5px;
+  & * {
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+  & input,
+  textarea {
+    padding-inline: 0px;
+    border-width: 0px;
+  }
+  & option {
+    background-color: #333;
+    color: aliceblue;
+  }
+  & .transporte option:first-child,
+  .motivo option:first-child {
+    display: none;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  & .cancelar,
+  .salvar {
+    margin: 5px;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    padding: 5px;
+    cursor: pointer;
+    /* border-radius: 3px; */
+  }
+  & .cancelar:hover {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(255, 100, 100);
+  }
+  & .salvar:hover {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(0, 255, 0);
+  }
+  & select {
+    text-transform: capitalize;
+  }
+}
+
+.formcontainer p {
+  margin: 0 auto;
+  color: rgb(255, 31, 31);
+}
+.alertabox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alerta {
+  display: none;
+}

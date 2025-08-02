@@ -1,0 +1,83 @@
+.maincontainer {
+  display: block;
+  background-color: rgba(51, 51, 51, 1);
+  color: aliceblue;
+  min-width: 315px;
+  max-width: 315px;
+  border-radius: 3px;
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+  & .obs {
+    padding: 5px;
+    border-top: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+  }
+
+  & .obs .legenda {
+    text-align: center;
+  }
+
+  & .container {
+    border-radius: 3px;
+    margin: 1px;
+    display: block;
+    padding: 5px;
+  }
+
+  & .container .linha {
+    display: flex;
+  }
+  & .linha:hover {
+    background-color: #5893ff;
+    transition: 0.2s ease-in-out;
+    cursor: default;
+    /* animation: ease-in-out; */
+  }
+
+  & .linha .legenda {
+    width: 115px;
+  }
+}
+
+.editar .opções {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  & input {
+    width: 100px;
+    height: 22px;
+    border: 1px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: larger;
+    cursor: pointer;
+  }
+  & .editar:hover {
+    background-color: #5893ff;
+    transition: 0.1s ease-in-out;
+  }
+  & .cancelar:hover {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(255, 100, 100);
+  }
+  & .salvar:hover {
+    transition: 0.1s ease-in-out;
+    background-color: rgb(0, 255, 0);
+  }
+}
+
+textarea {
+  text-transform: capitalize;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  padding-inline: 0px;
+  border-width: 0px;
+}
+
+.desativado {
+  resize: none;
+}

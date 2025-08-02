@@ -1,0 +1,82 @@
+.maincontainer {
+  /* top: 55px; */
+  display: block;
+  height: fit-content;
+  /* position: fixed; */
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 5px;
+  color: aliceblue;
+  /* min-width: 1024px; */
+  /* z-index: 3; */
+
+  box-shadow: 4px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  & form {
+    text-transform: capitalize;
+  }
+}
+
+.maincontainer .formcadastro {
+  padding: 5px;
+  & input[type="text"],
+  input[type="number"],
+  select {
+    height: 22px;
+    width: 100%;
+    background-color: aliceblue;
+    font-size: large;
+    border-radius: 5px;
+    height: 30px;
+    text-transform: capitalize;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  & option {
+    background-color: #333;
+    color: aliceblue;
+  }
+  & input:focus,
+  label:focus,
+  select:focus {
+    transition: ease-in-out 0.3s;
+    outline: 1px solid green;
+  }
+  & select option:first-child {
+    display: none;
+  }
+  & select {
+    cursor: pointer;
+  }
+}
+
+.nota {
+  display: flex;
+  width: fit-content;
+  & .item {
+    margin: 1px;
+  }
+}
+
+.buttons {
+  display: flex;
+  width: 99.5%;
+  align-items: center;
+  justify-content: space-around;
+
+  & input {
+    background-color: aliceblue;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    height: 22px;
+    border: 1px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: larger;
+    cursor: pointer;
+  }
+}

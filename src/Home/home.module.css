@@ -1,0 +1,55 @@
+.maincontainer {
+  display: flex;
+}
+
+.cardcontainer {
+  width: 100%;
+  & .lista {
+    cursor: pointer;
+    margin: 5px;
+    width: 315px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 3px;
+  }
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  & .lista {
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.obs .legenda {
+  text-align: center;
+}
+
+.erro {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: block;
+  align-content: center;
+  justify-items: center;
+  font-size: larger;
+}
+
+.lateral {
+  min-width: 315px;
+  max-width: 315px;
+  padding: 5px;
+  display: block;
+  margin: 0px 5px 0px 0px;
+
+  & .lateralInterna {
+    top: 125px;
+    position: sticky;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  }
+}

@@ -1,0 +1,58 @@
+.maincontainer form {
+  width: fit-content;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  & .usuarios {
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    & input {
+      height: 18px;
+      overflow: hidden;
+      padding: 5px;
+      font-size: large;
+      background-color: #333;
+      color: aliceblue;
+      text-transform: capitalize;
+      border-radius: 2px;
+      &:focus {
+        outline: none;
+      }
+    }
+    & .user {
+      width: 80px;
+    }
+    & .nome {
+      width: 250px;
+    }
+    & .origem {
+      width: 60px;
+      text-align: center;
+    }
+  }
+  & .enviar {
+    width: 100%;
+    & input {
+      height: 30px;
+      margin-left: 10px;
+      border-radius: 2px;
+      font-size: large;
+      background-color: aliceblue;
+      color: #333;
+      padding: 0 5px;
+      cursor: pointer;
+      /* transition: all 0.2s; */
+      &:hover {
+        outline: 1px solid red;
+      }
+      &:active {
+        &:active {
+          box-shadow: inset 0px 0px 6px 1px red;
+          -webkit-box-shadow: inset 0px 0px 6px 1px red;
+          -moz-box-shadow: inset 0px 0px 6px 1px red;
+        }
+      }
+    }
+  }
+}

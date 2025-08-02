@@ -1,0 +1,140 @@
+.maincontainer {
+  position: fixed;
+  background-color: rgba(51, 51, 51, 1);
+  width: 100vw;
+  height: calc(100vh - 50px);
+  z-index: 2;
+  top: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid aliceblue;
+  border-radius: 5px;
+  min-width: 1024px;
+
+  & .userCard {
+    border: 1px solid aliceblue;
+    background-color: #505050;
+    padding: 5px;
+    max-width: 100vw;
+    max-height: 66vh;
+    overflow: auto;
+    align-self: flex-start;
+    min-width: 1000px;
+    & ul {
+      gap: 10px;
+      display: flex;
+      /* flex-direction: column; */
+      & li {
+        border: 1px solid aliceblue;
+        margin: 5px 0 5px 0;
+        width: fit-content;
+        padding: 5px 5px 5px 0;
+      }
+    }
+  }
+}
+.contentContainer {
+  min-width: 1024px;
+  width: 95%;
+  height: 90%;
+  color: aliceblue;
+  background-color: #3b3b3b;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  & h1 {
+    margin: 15px 0 0 0;
+  }
+}
+.contentContainer .cadastroContainer {
+  border-bottom: 1px solid aliceblue;
+  width: 100%;
+  height: 8rem;
+  min-width: 1024px;
+  & form {
+    display: flex;
+    height: 2rem;
+    width: fit-content;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    & * {
+      border-radius: 5px;
+    }
+
+    & .entradas {
+      display: flex;
+      gap: 15px;
+      width: fit-content;
+      height: fit-content;
+
+      & .cadastro {
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+
+        & input {
+          background-color: aliceblue;
+          height: 1.8rem;
+          color: #333;
+          font-size: larger;
+        }
+      }
+      & .nome {
+        display: flex;
+        flex-direction: column;
+        & input {
+          background-color: aliceblue;
+          height: 1.8rem;
+          color: #333;
+          font-size: larger;
+          text-transform: capitalize;
+        }
+      }
+      & .origem {
+        & select {
+          background-color: aliceblue;
+          height: 1.8rem;
+          color: #333;
+          font-size: larger;
+          align-items: center;
+          padding: 0 5px 0 5px;
+          cursor: pointer;
+          display: flex;
+          & option:first-child {
+            display: none;
+          }
+        }
+        & option {
+          background-color: #333;
+          color: aliceblue;
+        }
+      }
+      & .enviar {
+        display: flex;
+        align-items: end;
+        & input {
+          background-color: aliceblue;
+          height: 1.8rem;
+          color: #333;
+          font-size: larger;
+          width: 60px;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            transition: all 0.1s;
+            outline: 2px solid green;
+          }
+          &:active {
+            box-shadow: inset 0px 0px 6px 1px green;
+            -webkit-box-shadow: inset 0px 0px 6px 1px green;
+            -moz-box-shadow: inset 0px 0px 6px 1px green;
+          }
+        }
+      }
+    }
+  }
+}
